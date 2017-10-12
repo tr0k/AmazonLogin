@@ -9,9 +9,17 @@
         <servlet-name>AmazonLoginServlet</servlet-name>
         <servlet-class>servlets.AmazonHandleLoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AmazonLogoutServlet</servlet-name>
+        <servlet-class>servlets.AmazonHandleLogoutServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AmazonLoginServlet</servlet-name>
         <url-pattern>/handlelogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AmazonLogoutServlet</servlet-name>
+        <url-pattern>/handlelogout</url-pattern>
     </servlet-mapping>
 
     <error-page>

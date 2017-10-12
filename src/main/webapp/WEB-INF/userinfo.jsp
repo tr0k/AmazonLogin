@@ -32,7 +32,10 @@
 <script type="text/javascript">
     document.getElementById('Logout').onclick = function() {
         amazon.Login.logout();
-        <% SessionManager.getInstance().setAccessToken(""); %>
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/handlelogout");
+        xhr.send(null);
+        alert("You have been logged out successfully.");
         window.location.href = "index.jsp";
     };
 </script>
