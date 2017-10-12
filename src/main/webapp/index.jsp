@@ -1,5 +1,17 @@
+<!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Single page template</title>
+    <link rel="stylesheet" href="//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
 <body>
+
 <!-- Obtain Amazon SDK -->
 <div id="amazon-root"></div>
 <script type="text/javascript">
@@ -14,14 +26,28 @@
         d.getElementById('amazon-root').appendChild(a);
     })(document);
 </script>
-<div>
-    <!-- Login with Amazon -->
-    <a href="javascript:;" id="LoginWithAmazon" onclick="parentNode.submit();">
-        <img border="0" alt="Login with Amazon"
-             src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_156x32.png"
-             width="156" height="32"/>
-    </a>
-</div>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>Welcome to Test Page!</h1>
+    </div><!-- /header -->
+
+    <div data-role="content" style="text-align: center;">
+
+        <!-- Login with Amazon -->
+        <a href="javascript:;" id="LoginWithAmazon" onclick="parentNode.submit();">
+            <img border="0" alt="Login with Amazon"
+                 src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_156x32.png"
+                 width="156" height="32"/>
+        </a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Hope you enjoy stay with us :)</h4>
+    </div><!-- /footer -->
+
+</div><!-- /page -->
 
 <script type="text/javascript">
 
