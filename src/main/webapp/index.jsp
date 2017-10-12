@@ -38,7 +38,7 @@
         <!-- Login with Amazon -->
         <a href="javascript:;" id="LoginWithAmazon" onclick="parentNode.submit();">
             <img border="0" alt="Login with Amazon"
-                 src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_156x32.png"
+                 src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_drkgry_312x64_pressed.png"
                  width="156" height="32"/>
         </a>
     </div><!-- /content -->

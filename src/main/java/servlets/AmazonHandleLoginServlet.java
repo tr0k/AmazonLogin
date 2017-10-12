@@ -24,6 +24,7 @@ public class AmazonHandleLoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws javax.servlet.ServletException, IOException {
+
         String userAgent = request.getHeader("User-Agent");
         String accessToken = request.getParameter("access_token");
         // Allocate a output writer to write the response message into the network socket

@@ -1,4 +1,5 @@
 <%@ page import="beans.UserInfo" %>
+<%@ page import="aws.ListAccessKeys" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -26,11 +27,16 @@
     Email address: <%= user.getEmail()%>
 </div>
 <div>
-    <a class="ui-button ui-widget ui-corner-all" id="Logout">Logout</a>
+    <a class="ui-button ui-widget ui-corner-all" id="LogoutBtn">Logout</a>
+</div>
+<div>
+    <form action="aws" method="POST" target="\aws">
+        <input class="ui-button ui-widget ui-corner-all" type="submit" value="Use AWS">
+    </form>
 </div>
 
 <script type="text/javascript">
-    document.getElementById('Logout').onclick = function() {
+    document.getElementById('LogoutBtn').onclick = function() {
         amazon.Login.logout();
         var xhr = new XMLHttpRequest();
         xhr.open("GET", "/handlelogout");
